@@ -5,8 +5,8 @@ import { siteConfig, telLink, whatsappLink } from "@/config/siteConfig";
 import { cn } from "@/lib/utils";
 
 type Props = {
-  message?: string;
-  className?: string;
+  message?: string | undefined;
+  className?: string | undefined;
   size?: "default" | "lg" | "xl" | "sm";
   showMaps?: boolean;
   tone?: "light" | "dark";

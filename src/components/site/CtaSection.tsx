@@ -3,7 +3,7 @@ import { ContactActions } from "@/components/site/ContactActions";
 type Props = {
   title?: string;
   description?: string;
-  message?: string;
+  message?: string | undefined;
 };
 
 export function CtaSection({
