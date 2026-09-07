@@ -10,33 +10,115 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as BeitShaarRouteImport } from './routes/beit-shaar'
+import { Route as CarShadesRouteImport } from './routes/car-shades'
+import { Route as PergolasRouteImport } from './routes/pergolas'
+import { Route as PrivacyScreensRouteImport } from './routes/privacy-screens'
+import { Route as SandwichPanelRouteImport } from './routes/sandwich-panel'
+import { Route as WarehousesRouteImport } from './routes/warehouses'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BeitShaarRoute = BeitShaarRouteImport.update({
+  id: '/beit-shaar',
+  path: '/beit-shaar',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CarShadesRoute = CarShadesRouteImport.update({
+  id: '/car-shades',
+  path: '/car-shades',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PergolasRoute = PergolasRouteImport.update({
+  id: '/pergolas',
+  path: '/pergolas',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyScreensRoute = PrivacyScreensRouteImport.update({
+  id: '/privacy-screens',
+  path: '/privacy-screens',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SandwichPanelRoute = SandwichPanelRouteImport.update({
+  id: '/sandwich-panel',
+  path: '/sandwich-panel',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WarehousesRoute = WarehousesRouteImport.update({
+  id: '/warehouses',
+  path: '/warehouses',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/beit-shaar': typeof BeitShaarRoute
+  '/car-shades': typeof CarShadesRoute
+  '/pergolas': typeof PergolasRoute
+  '/privacy-screens': typeof PrivacyScreensRoute
+  '/sandwich-panel': typeof SandwichPanelRoute
+  '/warehouses': typeof WarehousesRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/beit-shaar': typeof BeitShaarRoute
+  '/car-shades': typeof CarShadesRoute
+  '/pergolas': typeof PergolasRoute
+  '/privacy-screens': typeof PrivacyScreensRoute
+  '/sandwich-panel': typeof SandwichPanelRoute
+  '/warehouses': typeof WarehousesRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/beit-shaar': typeof BeitShaarRoute
+  '/car-shades': typeof CarShadesRoute
+  '/pergolas': typeof PergolasRoute
+  '/privacy-screens': typeof PrivacyScreensRoute
+  '/sandwich-panel': typeof SandwichPanelRoute
+  '/warehouses': typeof WarehousesRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/beit-shaar'
+    | '/car-shades'
+    | '/pergolas'
+    | '/privacy-screens'
+    | '/sandwich-panel'
+    | '/warehouses'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/beit-shaar'
+    | '/car-shades'
+    | '/pergolas'
+    | '/privacy-screens'
+    | '/sandwich-panel'
+    | '/warehouses'
+  id:
+    | '__root__'
+    | '/'
+    | '/beit-shaar'
+    | '/car-shades'
+    | '/pergolas'
+    | '/privacy-screens'
+    | '/sandwich-panel'
+    | '/warehouses'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  BeitShaarRoute: typeof BeitShaarRoute
+  CarShadesRoute: typeof CarShadesRoute
+  PergolasRoute: typeof PergolasRoute
+  PrivacyScreensRoute: typeof PrivacyScreensRoute
+  SandwichPanelRoute: typeof SandwichPanelRoute
+  WarehousesRoute: typeof WarehousesRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +130,59 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/beit-shaar': {
+      id: '/beit-shaar'
+      path: '/beit-shaar'
+      fullPath: '/beit-shaar'
+      preLoaderRoute: typeof BeitShaarRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/car-shades': {
+      id: '/car-shades'
+      path: '/car-shades'
+      fullPath: '/car-shades'
+      preLoaderRoute: typeof CarShadesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pergolas': {
+      id: '/pergolas'
+      path: '/pergolas'
+      fullPath: '/pergolas'
+      preLoaderRoute: typeof PergolasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy-screens': {
+      id: '/privacy-screens'
+      path: '/privacy-screens'
+      fullPath: '/privacy-screens'
+      preLoaderRoute: typeof PrivacyScreensRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sandwich-panel': {
+      id: '/sandwich-panel'
+      path: '/sandwich-panel'
+      fullPath: '/sandwich-panel'
+      preLoaderRoute: typeof SandwichPanelRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/warehouses': {
+      id: '/warehouses'
+      path: '/warehouses'
+      fullPath: '/warehouses'
+      preLoaderRoute: typeof WarehousesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  BeitShaarRoute: BeitShaarRoute,
+  CarShadesRoute: CarShadesRoute,
+  PergolasRoute: PergolasRoute,
+  PrivacyScreensRoute: PrivacyScreensRoute,
+  SandwichPanelRoute: SandwichPanelRoute,
+  WarehousesRoute: WarehousesRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
