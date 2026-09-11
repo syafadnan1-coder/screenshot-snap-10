@@ -18,7 +18,8 @@ export function Header() {
   }, [open]);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border/70 bg-background/85 backdrop-blur-lg">
+    <>
+    <header className="sticky top-0 z-50 border-b border-border/70 bg-background">
       <div className="container-site flex h-18 items-center justify-between gap-4">
         <Link to="/" aria-label="الصفحة الرئيسية" onClick={() => setOpen(false)}>
           <LogoBlock />
@@ -60,8 +61,10 @@ export function Header() {
         </div>
       </div>
 
+    </header>
+
       {open ? (
-        <div className="fixed inset-x-0 top-18 bottom-0 z-40 overflow-y-auto border-t border-border bg-background xl:hidden">
+        <div className="fixed inset-x-0 top-18 bottom-0 z-60 overflow-y-auto border-t border-border bg-background xl:hidden">
           <nav aria-label="قائمة الجوال" className="container-site py-4">
             <ul className="flex flex-col divide-y divide-border">
               {navLinks.map((link) => (
@@ -81,6 +84,6 @@ export function Header() {
           </nav>
         </div>
       ) : null}
-    </header>
+    </>
   );
 }

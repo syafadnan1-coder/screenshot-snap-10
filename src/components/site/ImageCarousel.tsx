@@ -1,3 +1,6 @@
+import Autoplay from "embla-carousel-autoplay";
+import { useRef } from "react";
+
 import {
   Carousel,
   CarouselContent,
@@ -9,9 +12,14 @@ import {
 export type CarouselImage = { src: string; alt: string };
 
 export function ImageCarousel({ images }: { images: CarouselImage[] }) {
+  const autoplay = useRef(
+    Autoplay({ delay: 3000, stopOnInteraction: false, stopOnMouseEnter: true }),
+  );
+
   return (
     <Carousel
       opts={{ direction: "rtl", loop: true, align: "start" }}
+      plugins={[autoplay.current]}
       className="w-full"
     >
       <CarouselContent className="-ms-4">
