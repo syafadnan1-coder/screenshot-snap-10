@@ -25,7 +25,7 @@ export function LogoBlock({
 }) {
   return (
     <span className="flex items-center gap-3">
-      <LogoMark className={variant === "light" ? "brightness-0 invert" : undefined} />
+      <LogoMark className={variant === "light" ? "brightness-0 invert" : ""} />
       <span className="flex flex-col leading-tight">
         <span
           className={cn(
