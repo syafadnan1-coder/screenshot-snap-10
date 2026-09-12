@@ -86,7 +86,7 @@ function HomePage() {
         <div className="container-site">
           <SectionHeading
             title="نماذج من التصاميم"
-            description="صور تجريبية توضح أنواع الخدمات، ويمكن استبدالها بصور الأعمال الحقيقية."
+            description="صور من أعمالنا توضح أنواع المظلات والبرجولات والسواتر."
             as="h2"
           />
           <div className="mt-10">
@@ -168,7 +168,7 @@ function HomePage() {
           <SectionHeading
             eyebrow="أعمالنا"
             title="أعمال ركن المقصورة"
-            description="معرض صور للتصاميم والأنواع. الصور الحالية تجريبية وليست مشاريع حقيقية."
+            description="معرض صور من أعمالنا في جدة بمختلف التصاميم والخامات."
             as="h2"
           />
           <div className="mt-10">

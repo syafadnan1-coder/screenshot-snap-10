@@ -52,7 +52,7 @@ export function ServicePage({ service }: { service: Service }) {
         <div className="container-site">
           <SectionHeading
             title={`معرض صور ${service.title}`}
-            description="صور تجريبية للعرض فقط، وسيتم استبدالها بصور الأعمال الحقيقية."
+            description="صور من أعمال ركن المقصورة في جدة."
             as="h2"
           />
           <div className="mt-10">
