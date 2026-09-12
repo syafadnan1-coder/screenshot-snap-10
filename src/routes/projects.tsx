@@ -30,7 +30,7 @@ function ProjectsPage() {
     <>
       <Hero
         title="أعمالنا"
-        description={`معرض صور لأنواع الخدمات التي يقدمها ${siteConfig.shortName} في جدة. الصور المعروضة حاليًا تجريبية للعرض فقط، ويتم استبدالها بصور الأعمال الحقيقية.`}
+        description={`معرض صور لأنواع الخدمات التي يقدمها ${siteConfig.shortName} في جدة. `}
         image="/images/projects/project-04.webp"
         imageAlt="نماذج من أعمال المظلات والسواتر"
       />
