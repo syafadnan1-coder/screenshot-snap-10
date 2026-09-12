@@ -189,15 +189,16 @@ export const projects: Project[] = [
     title: "برجولات — نموذج 4",
     category: "pergolas",
     description: "نموذج برجولة — من أعمال ركن المقصورة في جدة.",
-    image: "/images/pergolas/pergola-01.webp",
+    image: "/images/pergolas/pergola-04.webp",
   },
   {
     id: "project-21",
     title: "برجولات — نموذج 5",
     category: "pergolas",
     description: "نموذج برجولة — من أعمال ركن المقصورة في جدة.",
-    image: "/images/pergolas/pergola-02.webp",
+    image: "/images/pergolas/pergola-05.webp",
   },
+
   {
     id: "project-22",
     title: "سواتر — نموذج 1",
