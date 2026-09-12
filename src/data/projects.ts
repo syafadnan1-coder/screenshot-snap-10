@@ -218,22 +218,16 @@ export const projects: Project[] = [
     title: "سواتر — نموذج 3",
     category: "privacy-screens",
     description: "نموذج ساتر — من أعمال ركن المقصورة في جدة.",
-    image: "/images/privacy-screens/privacy-screen-01.webp",
+    image: "/images/privacy-screens/privacy-screen-03.webp",
   },
   {
     id: "project-25",
     title: "سواتر — نموذج 4",
     category: "privacy-screens",
     description: "نموذج ساتر — من أعمال ركن المقصورة في جدة.",
-    image: "/images/privacy-screens/privacy-screen-02.webp",
+    image: "/images/privacy-screens/privacy-screen-04.webp",
   },
-  {
-    id: "project-26",
-    title: "سواتر — نموذج 5",
-    category: "privacy-screens",
-    description: "نموذج ساتر — من أعمال ركن المقصورة في جدة.",
-    image: "/images/privacy-screens/privacy-screen-01.webp",
-  },
+
   {
     id: "project-27",
     title: "هناجر ومستودعات — نموذج 1",
