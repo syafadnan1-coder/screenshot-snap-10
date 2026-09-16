@@ -17,9 +17,9 @@ export const siteConfig = {
   whatsapp: "966543172671",
   mapsUrl: "https://maps.app.goo.gl/xKybM5n7qdorjCDT7?g_st=iwb",
   /** ضع رابط الموقع النهائي بعد النشر (يستخدم في canonical و sitemap) */
-  siteUrl: "https://roknalmaqsora.com",
+  siteUrl: "https://ruknalmaqsoora.com",
   seo: {
-    title: "مظلات سيارات وبيوت شعر وبرجولات وسواتر في جدة | ركن المقصورة",
+    title: "مظلات وسواتر وبيوت شعر| ركن المقصورة",
     description:
       "ركن المقصورة للخيام والمظلات وبيوت الشعر الحديثة في جدة: مظلات سيارات، بيوت شعر ملكي، خيام، برجولات حدائق، سواتر منازل، هناجر ومستودعات، وسندوتش بانل. تواصل عبر واتساب لطلب عرض سعر.",
   },
