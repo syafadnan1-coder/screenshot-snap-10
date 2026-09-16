@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://roknalmaqsora.com/sitemap.xml
+Sitemap: https://ruknalmaqsoora.com/sitemap.xml
